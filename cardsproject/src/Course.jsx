@@ -1,6 +1,12 @@
-function Course() {
+/* eslint-disable react/prop-types */
+function Course({title , desctription}) {
     return ( 
-        <div><h1>Course Project</h1></div>
+        <div className="container">
+            <div className="content">
+                <h1>{title}</h1>
+                <p>{desctription}</p>
+            </div>
+        </div>
      );
 }
 
